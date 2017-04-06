@@ -122,7 +122,7 @@
         case 4:
         {
             self.confirBtn.backgroundColor = [UIColor lightGrayColor];
-            self.cancelBtn.backgroundColor = [UIColor navgationBarTintColor];
+            self.cancelBtn.backgroundColor = [UIColor redColor];
             [self.confirBtn mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.bottom.mas_equalTo(10);
                 make.height.mas_equalTo(30);
@@ -201,7 +201,7 @@
         [_confirBtn setTitle:@"确定" forState:UIControlStateNormal];
         [_confirBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _confirBtn.titleLabel.font = [UIFont customFontSize:15.0];
-        _confirBtn.backgroundColor = [UIColor navgationBarTintColor];
+        _confirBtn.backgroundColor = [UIColor redColor];
         [_diogView addSubview:_confirBtn];
         [_confirBtn addTarget:self action:@selector(didClickedConfirButton) forControlEvents:UIControlEventTouchUpInside];
     }
